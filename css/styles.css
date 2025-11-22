@@ -1,24 +1,11 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #34eb6b;
-}
+
 
 ul li {
   float: left;
+  background-color: lightgreen;
 }
 
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: black;
-  
-}
+
 body{
 	background-image: url('img/climate-change.jpg');
 	background-color: lightgreen;
@@ -32,5 +19,12 @@ h1{
 	font-family: "Licorice", cursive;
 	font-weight: 400;
 	font-style: normal;
-	color: #34eb6b;
+	color: black;
+}
+form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
 }
