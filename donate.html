@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Licorice&family=Sofadi+One&display=swap" rel="stylesheet">
+		
+		<!-- Boostrap links -->
+		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		 
+		 <!-- script for donations -->
+		 <script src="js/external.js"></script>
+		 
+		<!-- meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Kieran Panelo">
+		
+		<!-- Title -->
+		<title>Donations</title>
+		
+		<!-- My links -->
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		  <div class="container-fluid">
+			<!-- the name of page -->
+			<a class="navbar-brand">Donate</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<!-- list of all pages -->
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#">Learn</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#">Impacts</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="solutions.html">Solutions</a>
+				</li>
+				<li class="nav-item dropdown">
+			</div>
+		  </div>
+		</nav>
+		
+		<!-- A message pops up after submiting the donataion form -->
+		<h1 id="message"></h1>
+		 
+		<!-- form for donations -->
+		<form onsubmit="return false;" >
+		  <fieldset>
+			<!-- each div is a field for user to input for the requirements of donating -->
+			<div class="mb-3">
+			  <label class="form-label">Donations</label>
+			  <input type="number" id="donation" class="form-control" placeholder="Enter the amount">
+			</div>
+			<div class="mb-3">
+			  <label class="form-label">Name on card</label>
+			  <input type="text" id="cardName" class="form-control" placeholder="Full Name">
+			</div>
+			<div class="mb-3">
+			  <label class="form-label">Email Address</label>
+			  <input type="email" id="emailAddress" class="form-control" placeholder="Email Address">
+			</div>
+			<div class="mb-3">
+			  <label class="form-label">Card number</label>
+			  <input type="number" id="cardNumber" class="form-control">
+			</div>
+			<div class="mb-3">
+			  <label class="form-label">Type of card</label>
+			  <select class="form-select">
+				<option>Revolut</option>
+				<option>Credit Card</option>
+			  </select>
+			</div>
+			<button type="button" class="btn btn-primary" onclick="donateForm()">Submit</button>
+		  </fieldset>
+		</form>
+		
+		
+		<!-- Bootstrap scripts -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+		</script>
+	</body>
+</html>
