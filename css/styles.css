@@ -5,6 +5,13 @@ ul li {
   background-color: lightgreen;
 }
 
+@media (max-width: 1080px) {
+    .row .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 
 body{
 	background-image: url('img/climate-change.jpg');
