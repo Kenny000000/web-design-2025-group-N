@@ -26,65 +26,63 @@
 	<body>
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
-		  <div class="container-fluid">
-			<!-- the name of page -->
-			<a class="navbar-brand">Donate</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
+			<div class="container-fluid">
+				<h2 class="navbar-brand">Solutions</h2>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 			
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<!-- list of all pages -->
-			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-				  <a class="nav-link active" aria-current="page" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link active" aria-current="page" href="#">Learn</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link active" aria-current="page" href="#">Impacts</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link active" aria-current="page" href="solutions.html">Solutions</a>
-				</li>
-				<li class="nav-item dropdown">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="#">Learn</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="#">Impacts</a>
+						</li>
+						<li class="nav-item">					  
+							<a class="nav-link active" aria-current="page" href="solutions.html">Solutions</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		  </div>
 		</nav>
 		
 		<!-- A message pops up after submiting the donataion form -->
-		<h1 id="message"></h1>
+		<h1 id="message" hidden></h1>
 		 
 		<!-- form for donations -->
 		<form onsubmit="return false;" >
-		  <fieldset>
-			<!-- each div is a field for user to input for the requirements of donating -->
-			<div class="mb-3">
-			  <label class="form-label">Donations</label>
-			  <input type="number" id="donation" class="form-control" placeholder="Enter the amount">
-			</div>
-			<div class="mb-3">
-			  <label class="form-label">Name on card</label>
-			  <input type="text" id="cardName" class="form-control" placeholder="Full Name">
-			</div>
-			<div class="mb-3">
-			  <label class="form-label">Email Address</label>
-			  <input type="email" id="emailAddress" class="form-control" placeholder="Email Address">
-			</div>
-			<div class="mb-3">
-			  <label class="form-label">Card number</label>
-			  <input type="number" id="cardNumber" class="form-control">
-			</div>
-			<div class="mb-3">
-			  <label class="form-label">Type of card</label>
-			  <select class="form-select">
-				<option>Revolut</option>
-				<option>Credit Card</option>
-			  </select>
-			</div>
-			<button type="button" class="btn btn-primary" onclick="donateForm()">Submit</button>
-		  </fieldset>
+			<fieldset>
+				<!-- each div is a field for user to input for the requirements of donating -->
+				<div class="mb-3">
+				  <label class="form-label">Donations</label>
+				  <input type="number" id="donation" class="form-control" placeholder="Enter the amount">
+				</div>
+				<div class="mb-3">
+				  <label class="form-label">Name on card</label>
+				  <input type="text" id="cardName" class="form-control" placeholder="Full Name">
+				</div>
+				<div class="mb-3">
+				  <label class="form-label">Email Address</label>
+				  <input type="email" id="emailAddress" class="form-control" placeholder="Email Address">
+				</div>
+				<div class="mb-3">
+				  <label class="form-label">Card number</label>
+				  <input type="number" id="cardNumber" class="form-control">
+				</div>
+				<div class="mb-3">
+				  <label class="form-label">Type of card</label>
+				  <select class="form-select">
+					<option>Revolut</option>
+					<option>Credit Card</option>
+				  </select>
+				</div>
+				<button type="button" class="btn btn-primary" onclick="donateForm()">Submit</button>
+			</fieldset>
 		</form>
 		
 		
