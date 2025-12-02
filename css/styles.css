@@ -1,19 +1,31 @@
-ul li {
-  float: left;
-  background-color: lightgreen;
-}
 .container-fluid{
 	background-color: grey;
 }
 body{
-	background-image: url('img/climate-change.jpg');
-	background-color: grey;
+	background-color: #4caf50;
 }
-
+.column-text{
+	/* padding to center the text  */
+	padding: 10px;
+}
+.column-header{
+	text-align: center;
+}
+ /* center title for mobile view*/
+@media(max-width: 764px){
+	.title-footer{
+		text-align: center;
+	}
+}
+/* for div color */
+.container-fluid{
+	background: beige;
+}
 .donateTitle{
 	text-align:center;
 	color: lightgreen;
 }
+/* form css */
 form {
 	max-width: 600px;
 	margin: 0 auto;
@@ -78,13 +90,18 @@ input[type="checkbox"]:hover {
 }
 
 .btn-primary{
+	/* color of button */
 	background-color: green;
-	/* font-size: 100px; */
-	hover-color: green;
 }
 
 /* hover color for any buttons */
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.btn-primary:hover{
+	/* color when hovering */
     background-color: lightgreen;
-    border-color: darkgreen;
+}
+.btn-primary:active {
+	/* changes color when clicked */
+	background-color: darkgreen;
+	/* animation when clicked */
+	 transform: translateY(4px);
 }

@@ -21,6 +21,7 @@ function validateDonations() {
     const typeErr = document.getElementById("type-error");
     const agreeErr = document.getElementById("agree-error");
 
+	// to clear errors
     amouErr.textContent = "";
     nameErr.textContent = "";
     emailErr.textContent = "";
@@ -32,6 +33,7 @@ function validateDonations() {
 	
 	// declare isValid value true
     let isValid = true;
+	
 	//if statement to check the values for each fields
     if (amount === "") {
         amouErr.textContent = "Please enter an amount";
@@ -53,7 +55,7 @@ function validateDonations() {
         expiryErr.textContent = "Please enter the expiry date correctly.";
         isValid = false;
     }
-    if (cvv === "" || cvv.length < 3) {
+    if (cvv === "" || cvv.length < 2) {
         cvvErr.textContent = "Please input the three digit CVV";
         isValid = false;
     }
@@ -65,10 +67,12 @@ function validateDonations() {
         agreeErr.textContent = "Please agree to the above information.";
         isValid = false;
     }
-
-    if (isValid) {
-        alert("Form submitted successfully!");
-    }
+	 if (isValid) {
+		alert("Form submitted successfully!");
+		return true;
+	} else {
+		return false; 
+	}
 
     return isValid;
 }
