@@ -1,9 +1,6 @@
 /* Author: Kieran Panelo */
-.container-fluid{
-	background-color: grey;
-}
 body{
-	background-color: #4caf50;
+	background-color: #2c3e50;
 }
 .column-text{
 	/* padding to center the text  */
@@ -12,15 +9,26 @@ body{
 .column-header{
 	text-align: center;
 }
+/* button for desktop view */
+.donateButton{
+	display: block;
+	/* increase size of button */
+	padding: 10px 20px;
+	/* white color for text of button */
+	color: #fff;
+	border-radius: 4px;
+	/* button side by side */
+	display: flex;
+}
  /* center title for mobile view*/
 @media(max-width: 764px){
 	.title-footer{
 		text-align: center;
 	}
 }
-/* for div color */
-.container-fluid{
-	background: beige;
+
+nav {
+	background-color: #2c3e50;
 }
 .donateTitle{
 	text-align:center;
@@ -28,56 +36,35 @@ body{
 }
 /* form css */
 form {
+	/* size of form */
 	max-width: 600px;
+	/* center the form */
 	margin: 0 auto;
+	/* text don't touch the corner */
 	padding: 20px;
+	/* form color */
 	background-color: #fff;
 	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-input[type="text"],
-input[type="password"],
-select,
-textArea {
+/* input fieldset styling */
+input[type="text"]{
+	/* input field goes across the page */
 	width: 100%;
+	/* input field bigger */
 	padding: 10px;
+	/* create gap between label and input */
 	margin: 5px 0;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	box-sizing: border-box;
-	font-size: 16px;
 }
+/* styling of field input */
 select {
 	width: 100%;
 	padding: 10px;
 	margin: 5px 0;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	box-sizing: border-box;
-	font-size: 16px;
-	background-color: #fff;
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
-textarea {
-	resize: vertical;
-}
-input[type="submit"],
-input[type="reset"],
-input[type="checkbox"] {
-	background-color: #007bff;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	padding: 10px 20px;
-	cursor: pointer;
-	font-size: 16px;
-}
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="checkbox"]:hover {
-	background-color: #0056b3;
 }
 .error-message {
 	color: red;
@@ -85,24 +72,20 @@ input[type="checkbox"]:hover {
 	margin-top: 5px;
 }
 /* center the text inside footer */
-.footer{
-	text-align: center;
-	background-color: lightblue;
-}
 
 .btn-primary{
 	/* color of button */
-	background-color: green;
+	background-color: #2c3e50
 }
-
-/* hover color for any buttons */
 .btn-primary:hover{
 	/* color when hovering */
     background-color: lightgreen;
 }
+/* hover color for any buttons */
 .btn-primary:active {
 	/* changes color when clicked */
-	background-color: darkgreen;
+	background-color: green;
 	/* animation when clicked */
 	 transform: translateY(4px);
 }
+/* End of Author: Kieran */
