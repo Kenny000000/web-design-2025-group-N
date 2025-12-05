@@ -8,6 +8,18 @@ body{
 }
 .column-header{
 	text-align: center;
+	font-family: "Sofadi One", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+.columnImg{
+	border: 5px solid;
+	color: #2c3e50;
+}
+.titleFooter{
+	font-family: "Sofadi One", system-ui;
+	font-weight: 400;
+	font-style: normal;
 }
 /* button for desktop view */
 .donateButton{
@@ -24,6 +36,9 @@ body{
 @media(max-width: 764px){
 	.title-footer{
 		text-align: center;
+		font-family: "Sofadi One", system-ui;
+		font-weight: 400;
+		font-style: normal;
 	}
 }
 
