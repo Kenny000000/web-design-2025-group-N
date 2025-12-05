@@ -66,7 +66,6 @@ function validateDonations() {
 	} else {
 		return false; 
 	}
-
     return isValid;
 }
 // resets the values for the field
@@ -86,6 +85,7 @@ function validateExpiry() {
 	const field = document.getElementById("expiry");
 	// get error input field from id
 	const expiryError = document.getElementById("expiry-error");
+	// removes spaces from start and end of string
 	const value = field.value.trim();
 	expiryError.textContent = "";
 	
@@ -96,7 +96,7 @@ function validateExpiry() {
 	}
 	// checks for forward slash
 	if(!value.includes("/")){
-		expiryError.textContent = "Please rewrite as MM/YY";
+		expiryError.textContent = "Please add forward slash (/) ";
 		return false;
 	}
 	
@@ -107,7 +107,7 @@ function validateExpiry() {
 		return false;
 	}
 	
-	//expirySplit = [mm,yy]
+	//expirySplit = [mm,yy] 
 	let month = expirySplit[0];
 	let year = expirySplit[1];
 	
@@ -127,9 +127,8 @@ function validateExpiry() {
 		return false;
 	}
 	
-	
 	month = parseInt(month, 10); //turns string from "09" to int = 9
-	let fullYear = 2000 + parseInt(year, 10); 
+	let fullYear = 2000 + parseInt(year, 10); //converts the YY into YYYY
 	
 	if (month < 1 || month > 12) {
 		expiryError.textContent = "Month only between 1 and 12";
