@@ -1,3 +1,4 @@
+// Author: Kieran Panelo
 //validates the form before getting submitted
 function validateDonations() {
 	
@@ -149,6 +150,6 @@ function validateExpiry() {
 	// once everything is checked," return true" lets user get out of function
 	return true;
 }	
-
+// End Author: Kieran Panelo
 	
 	
