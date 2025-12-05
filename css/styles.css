@@ -40,6 +40,11 @@
 		font-weight: 400;
 		font-style: normal;
 	}
+	/* center the button on mobile view */
+	.btn-primary{
+		display: block;
+		margin: auto;
+	}
 }
 .donateTitle{
 	text-align:center;
